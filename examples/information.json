@@ -1,0 +1,213 @@
+{
+    "data": [
+        {
+            "Name": "Echo Dot (2nd Gen) - Alexa-Enabled",
+            "Category": [
+                "Voice Command Device"
+            ],
+            "Customers": " 152"
+        },
+        {
+            "Name": "Amazon Echo - Alexa-Enabled",
+            "Category": [
+                "Audio Speaker",
+                "Voice Command Device"
+            ],
+            "Customers": " 330"
+        },
+        {
+            "Name": "Amazon Fire TV (2nd Gen)",
+            "Category": [
+                "Media Player"
+            ],
+            "Customers": " 17"
+        },
+        {
+            "Name": "Arlo 2 HD Camera Security System",
+            "Category": [
+                "Cloud Camera"
+            ],
+            "Customers": " 23"
+        },
+        {
+            "Name": "TP-LINK Wi-Fi Smart Plug with Energy Monitoring",
+            "Category": [
+                "Plug"
+            ],
+            "Customers": " 4"
+        },
+        {
+            "Name": "Echo Show",
+            "Category": [
+                "Audio SpeakerCloud Camera..."
+            ],
+            "Customers": " 5"
+        },
+        {
+            "Name": "Nest Learning Thermostat (3rd Gen)",
+            "Category": [
+                "Thermostat"
+            ],
+            "Customers": " 139"
+        },
+        {
+            "Name": "Arlo 1 HD Camera Security System",
+            "Category": [
+                "Cloud Camera"
+            ],
+            "Customers": " 13"
+        },
+        {
+            "Name": "Chromecast",
+            "Category": [
+                "Media Player"
+            ],
+            "Customers": " 43"
+        },
+        {
+            "Name": "Roku Streaming Stick",
+            "Category": [
+                "Media Player"
+            ],
+            "Customers": " 4"
+        },
+        {
+            "Name": "TP-LINK Wi-Fi Smart Plug",
+            "Category": [
+                "Plug"
+            ],
+            "Customers": " 37"
+        },
+        {
+            "Name": "Belkin WeMo Light Switch",
+            "Category": [
+                "Light Switch"
+            ],
+            "Customers": " 65"
+        },
+        {
+            "Name": "Amcrest ProHD",
+            "Category": [
+                "Cloud Camera"
+            ],
+            "Customers": " 8"
+        },
+        {
+            "Name": "Sony PlayStation 4 - 500GB",
+            "Category": [
+                "Media Player"
+            ],
+            "Customers": " 9"
+        },
+        {
+            "Name": "SONOS PLAY: 1 Compact Wireless Speaker",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 85"
+        },
+        {
+            "Name": "Apple TV (4th Gen, 32GB)",
+            "Category": [],
+            "Customers": " 71"
+        },
+        {
+            "Name": "Nest Cam",
+            "Category": [
+                "Cloud Camera"
+            ],
+            "Customers": " 55"
+        },
+        {
+            "Name": "Fitbit Aria Wi-Fi Smart Scale",
+            "Category": [
+                "Scale"
+            ],
+            "Customers": " 36"
+        },
+        {
+            "Name": "Roku Express",
+            "Category": [
+                "Media Player"
+            ],
+            "Customers": " 3"
+        },
+        {
+            "Name": "Belkin WeMo Switch",
+            "Category": [
+                "Plug"
+            ],
+            "Customers": " 79"
+        },
+        {
+            "Name": "SONOS PLAY: 3 Wireless Speaker",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 34"
+        },
+        {
+            "Name": "JAM Classic Speaker",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 1"
+        },
+        {
+            "Name": "Nest Learning Thermostat (2nd Gen)",
+            "Category": [
+                "Thermostat"
+            ],
+            "Customers": " 170"
+        },
+        {
+            "Name": "Ring Chime",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 15"
+        },
+        {
+            "Name": "SONOS PLAY: 5 Wireless Speaker",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 31"
+        },
+        {
+            "Name": "SONOS PLAYBAR",
+            "Category": [
+                "Audio Speaker"
+            ],
+            "Customers": " 34"
+        },
+        {
+            "Name": "Google Wifi",
+            "Category": [
+                "Wireless Signal Extender"
+            ],
+            "Customers": " 16"
+        },
+        {
+            "Name": "ecobee3 HomeKit-enabled Thermostat",
+            "Category": [
+                "Thermostat"
+            ],
+            "Customers": " 78"
+        },
+        {
+            "Name": "Google Home",
+            "Category": [
+                "Voice Command Device"
+            ],
+            "Customers": " 98"
+        },
+        {
+            "Name": "Arlo Q",
+            "Category": [
+                "Cloud Camera"
+            ],
+            "Customers": " 5"
+        }
+    ]
+}
