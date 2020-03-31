@@ -44,7 +44,6 @@ for categ in cat:
 
     # Finale extract the desired information and add it to list
     category.append(category_pattern.findall(categ))
-print(category)
 
 # Create a dictionary which contains a list which contains dictionaries
 # for each product. Each of dictionaries has a name of the product,
