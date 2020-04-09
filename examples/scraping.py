@@ -49,7 +49,6 @@ for categ in cat:
 
     # Finale extract the desired information and add it to list
     category.append(category_pattern.findall(categ))
-<<<<<<< HEAD
 
 # Find rate of product
 # It needs extra work because it is saved as style
@@ -58,8 +57,6 @@ rate_pattern = re.compile('(?<=width:).*(?=%)')
 rate = soup.find_all('div', attrs={'class': 'fill'})[1:]
 for rat in rate:
     rates.append(rate_pattern.findall(str(rat))[0])
-=======
->>>>>>> 3b159eef9015d9a92ffce54a8cd8e3cecec0636c
 
 # Create a dictionary which contains a list which contains dictionaries
 # for each product. Each of dictionaries has a name of the product,
