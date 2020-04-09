@@ -1,213 +1,273 @@
 {
     "data": [
         {
-            "Name": "Echo Dot (2nd Gen) - Alexa-Enabled",
-            "Category": [
+            "name": "Echo Dot (2nd Gen) - Alexa-Enabled",
+            "category": [
                 "Voice Command Device"
             ],
-            "Customers": " 152"
+            "price": "$20",
+            "customers": " 152",
+            "rate": "80"
         },
         {
-            "Name": "Amazon Echo - Alexa-Enabled",
-            "Category": [
+            "name": "Amazon Echo - Alexa-Enabled",
+            "category": [
                 "Audio Speaker",
                 "Voice Command Device"
             ],
-            "Customers": " 330"
+            "price": "$69",
+            "customers": " 330",
+            "rate": "60"
         },
         {
-            "Name": "Amazon Fire TV (2nd Gen)",
-            "Category": [
+            "name": "Amazon Fire TV (2nd Gen)",
+            "category": [
                 "Media Player"
             ],
-            "Customers": " 17"
+            "price": "$90",
+            "customers": " 17",
+            "rate": "40"
         },
         {
-            "Name": "Arlo 2 HD Camera Security System",
-            "Category": [
+            "name": "Arlo 2 HD Camera Security System",
+            "category": [
                 "Cloud Camera"
             ],
-            "Customers": " 23"
+            "price": "$185",
+            "customers": " 23",
+            "rate": "20"
         },
         {
-            "Name": "TP-LINK Wi-Fi Smart Plug with Energy Monitoring",
-            "Category": [
+            "name": "TP-LINK Wi-Fi Smart Plug with Energy Monitoring",
+            "category": [
                 "Plug"
             ],
-            "Customers": " 4"
+            "price": "$29",
+            "customers": " 4",
+            "rate": "86"
         },
         {
-            "Name": "Echo Show",
-            "Category": [
+            "name": "Echo Show",
+            "category": [
                 "Audio SpeakerCloud Camera..."
             ],
-            "Customers": " 5"
+            "price": "$85",
+            "customers": " 5",
+            "rate": "86"
         },
         {
-            "Name": "Nest Learning Thermostat (3rd Gen)",
-            "Category": [
+            "name": "Nest Learning Thermostat (3rd Gen)",
+            "category": [
                 "Thermostat"
             ],
-            "Customers": " 139"
+            "price": "$210",
+            "customers": " 139",
+            "rate": "86"
         },
         {
-            "Name": "Arlo 1 HD Camera Security System",
-            "Category": [
+            "name": "Arlo 1 HD Camera Security System",
+            "category": [
                 "Cloud Camera"
             ],
-            "Customers": " 13"
+            "price": "$136",
+            "customers": " 13",
+            "rate": "75"
         },
         {
-            "Name": "Chromecast",
-            "Category": [
+            "name": "Chromecast",
+            "category": [
                 "Media Player"
             ],
-            "Customers": " 43"
+            "price": "$25",
+            "customers": " 43",
+            "rate": "86"
         },
         {
-            "Name": "Roku Streaming Stick",
-            "Category": [
+            "name": "Roku Streaming Stick",
+            "category": [
                 "Media Player"
             ],
-            "Customers": " 4"
+            "price": "$52",
+            "customers": " 4",
+            "rate": "82"
         },
         {
-            "Name": "TP-LINK Wi-Fi Smart Plug",
-            "Category": [
+            "name": "TP-LINK Wi-Fi Smart Plug",
+            "category": [
                 "Plug"
             ],
-            "Customers": " 37"
+            "price": "$17",
+            "customers": " 37",
+            "rate": "87"
         },
         {
-            "Name": "Belkin WeMo Light Switch",
-            "Category": [
+            "name": "Belkin WeMo Light Switch",
+            "category": [
                 "Light Switch"
             ],
-            "Customers": " 65"
+            "price": "$40",
+            "customers": " 65",
+            "rate": "72"
         },
         {
-            "Name": "Amcrest ProHD",
-            "Category": [
+            "name": "Amcrest ProHD",
+            "category": [
                 "Cloud Camera"
             ],
-            "Customers": " 8"
+            "price": "$60",
+            "customers": " 8",
+            "rate": "92"
         },
         {
-            "Name": "Sony PlayStation 4 - 500GB",
-            "Category": [
+            "name": "Sony PlayStation 4 - 500GB",
+            "category": [
                 "Media Player"
             ],
-            "Customers": " 9"
+            "price": "$250",
+            "customers": " 9",
+            "rate": "88"
         },
         {
-            "Name": "SONOS PLAY: 1 Compact Wireless Speaker",
-            "Category": [
+            "name": "SONOS PLAY: 1 Compact Wireless Speaker",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 85"
+            "price": "$149",
+            "customers": " 85",
+            "rate": "86"
         },
         {
-            "Name": "Apple TV (4th Gen, 32GB)",
-            "Category": [],
-            "Customers": " 71"
+            "name": "Apple TV (4th Gen, 32GB)",
+            "category": [],
+            "price": "$150",
+            "customers": " 71",
+            "rate": "76"
         },
         {
-            "Name": "Nest Cam",
-            "Category": [
+            "name": "Nest Cam",
+            "category": [
                 "Cloud Camera"
             ],
-            "Customers": " 55"
+            "price": "$125",
+            "customers": " 55",
+            "rate": "76"
         },
         {
-            "Name": "Fitbit Aria Wi-Fi Smart Scale",
-            "Category": [
+            "name": "Fitbit Aria Wi-Fi Smart Scale",
+            "category": [
                 "Scale"
             ],
-            "Customers": " 36"
+            "price": "$133",
+            "customers": " 36",
+            "rate": "86"
         },
         {
-            "Name": "Roku Express",
-            "Category": [
+            "name": "Roku Express",
+            "category": [
                 "Media Player"
             ],
-            "Customers": " 3"
+            "price": "$49",
+            "customers": " 3",
+            "rate": "93"
         },
         {
-            "Name": "Belkin WeMo Switch",
-            "Category": [
+            "name": "Belkin WeMo Switch",
+            "category": [
                 "Plug"
             ],
-            "Customers": " 79"
+            "price": "$36",
+            "customers": " 79",
+            "rate": "94"
         },
         {
-            "Name": "SONOS PLAY: 3 Wireless Speaker",
-            "Category": [
+            "name": "SONOS PLAY: 3 Wireless Speaker",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 34"
+            "price": "$320",
+            "customers": " 34",
+            "rate": "85"
         },
         {
-            "Name": "JAM Classic Speaker",
-            "Category": [
+            "name": "JAM Classic Speaker",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 1"
+            "price": "$33",
+            "customers": " 1",
+            "rate": "71"
         },
         {
-            "Name": "Nest Learning Thermostat (2nd Gen)",
-            "Category": [
+            "name": "Nest Learning Thermostat (2nd Gen)",
+            "category": [
                 "Thermostat"
             ],
-            "Customers": " 170"
+            "price": "$200",
+            "customers": " 170",
+            "rate": "88"
         },
         {
-            "Name": "Ring Chime",
-            "Category": [
+            "name": "Ring Chime",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 15"
+            "price": "$30",
+            "customers": " 15",
+            "rate": "78"
         },
         {
-            "Name": "SONOS PLAY: 5 Wireless Speaker",
-            "Category": [
+            "name": "SONOS PLAY: 5 Wireless Speaker",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 31"
+            "price": "$420",
+            "customers": " 31",
+            "rate": "91"
         },
         {
-            "Name": "SONOS PLAYBAR",
-            "Category": [
+            "name": "SONOS PLAYBAR",
+            "category": [
                 "Audio Speaker"
             ],
-            "Customers": " 34"
+            "price": "$699",
+            "customers": " 34",
+            "rate": "72"
         },
         {
-            "Name": "Google Wifi",
-            "Category": [
+            "name": "Google Wifi",
+            "category": [
                 "Wireless Signal Extender"
             ],
-            "Customers": " 16"
+            "price": "$99",
+            "customers": " 16",
+            "rate": "84"
         },
         {
-            "Name": "ecobee3 HomeKit-enabled Thermostat",
-            "Category": [
+            "name": "ecobee3 HomeKit-enabled Thermostat",
+            "category": [
                 "Thermostat"
             ],
-            "Customers": " 78"
+            "price": "$185",
+            "customers": " 78",
+            "rate": "86"
         },
         {
-            "Name": "Google Home",
-            "Category": [
+            "name": "Google Home",
+            "category": [
                 "Voice Command Device"
             ],
-            "Customers": " 98"
+            "price": "$99",
+            "customers": " 98",
+            "rate": "90"
         },
         {
-            "Name": "Arlo Q",
-            "Category": [
+            "name": "Arlo Q",
+            "category": [
                 "Cloud Camera"
             ],
-            "Customers": " 5"
+            "price": "$135",
+            "customers": " 5",
+            "rate": "93"
         }
     ]
 }
