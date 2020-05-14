@@ -20,7 +20,7 @@ URL = "https://www.smarthomedb.com/?page=1"
 today = date.today()
 today = today.strftime(str(today))
 try:
-    with open('data.json', 'r', encoding='utf-8') as ff:
+    with open('modules/data.json', 'r', encoding='utf-8') as ff:
         main_content = json.load(ff)
 except:
     main_content = dict()
@@ -119,5 +119,5 @@ def page_parse(URL):
 
 page_parse(URL)
 # Create a JSON file and write extracted data into it.
-with open('data.json', 'w', encoding='utf-8') as ff:
+with open('modules/data.json', 'w', encoding='utf-8') as ff:
     json.dump(main_content, ff, ensure_ascii=False, indent=4)

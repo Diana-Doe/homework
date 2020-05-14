@@ -1,5 +1,8 @@
-from LinkedList import LinkedList, LinkedDict
+'''
+Module with ADT class. 
+'''
 import json
+from LinkedList import LinkedDict, LinkedList
 
 class DataADT:
     '''Represents data'''
@@ -11,6 +14,8 @@ class DataADT:
         self.categories = LinkedList()
         self.dates = LinkedList()
         self.newest = ''
+        self.highestprice = 0
+        self.lowestprice = 10000
 
     def insert(self, data):
         '''
@@ -42,10 +47,19 @@ class DataADT:
                         value = catList
                     # convert price into int
                     if param == 'price' and item['price'] != 'Pending':
-                        value = int(item['price'].replace(',', ''))
+                        value = int(item['price'].replace(',', '').replace(' ',''))
+                        if value > self.highestprice:
+                            self.highestprice = value
+                        elif value < self.lowestprice:
+                            self.lowestprice = value
                     # convert rate into int
                     if param == 'rate':
                         value = int(item['rate'].replace(',', ''))
+                    # convert customers into int
+                    if param == 'customers' and item['customers'] != "":
+                        value = int(item['customers'].replace(',', '').replace(' ',''))
+                    elif param == 'customers' and item['customers'] == "":
+                        value = 0
                     newDict.add(value, param)
                 # add created dictionary to main LinkedList
                 self.list.add(newDict)
@@ -60,6 +74,12 @@ class DataADT:
         return len(self.list)
 
     def date_count(self):
+        '''
+        DataADT -> LinkedDict()
+        Counts the number of devices in each available date.
+        Return linked dict whith date as key and number of devices
+        as value.
+        '''
         diction = LinkedDict()
         for item in self.list:
             if item['date'] in diction:
@@ -69,6 +89,12 @@ class DataADT:
         return diction
     
     def date_count_avail(self):
+        '''
+        DataADT -> LinkedDict()
+        Counts the number of available devices in each available date.
+        Return linked dict whith date as key and number of available devices
+        as value.
+        '''
         diction = LinkedDict()
         for item in self.list:
             if item['price'] != 'Pending':
@@ -78,38 +104,100 @@ class DataADT:
                     diction.add(1, item['date'])
         return diction
 
-    def category_count(self):
+    def date_customers(self):
+        '''
+        DataADT -> LinkedDict()
+        Counts the number of available customers in each available date.
+        Return linked dict whith date as key and number of customers
+        as value.
+        '''
+        diction = LinkedDict()
+        for item in self.list:
+            if item['date'] in diction:
+                diction[item['date']] = diction[item['date']] + item['customers']
+            else:
+                diction.add(item['customers'], item['date'])
+        return diction
+
+    def category_count(self,date=None):
+        '''
+        DataADT, str -> LinkedDict()
+        Counts the number of devices in each category.
+        Return linked dict with catogory as key and number of devices
+        as value.
+        If you don`t enter date it will return data about newest date.
+        Date should look like: 2020-04-20
+        '''
+        if date is None:
+            date = self.newest
         diction = LinkedDict()
         for item in self.list:
             for category in item['category']:
-                if item['date'] == self.newest:
+                if item['date'] == date:
                     if category in diction:
                         diction[category] = diction[category] + 1
                     else:
                         diction.add(1, category)
         return diction
     
-    def category_count_avail(self):
+    def category_count_avail(self, date=None):
+        '''
+        DataADT, str -> LinkedDict()
+        Counts the number of available devices in each category.
+        Return linked dict with catogory as key and number of available devices
+        as value.
+        If you don`t enter date it will return data about newest date.
+        Date should look like: 2020-04-20
+        '''
+        if date is None:
+            date = self.newest
+        assert date in self.dates, "Not available date."
         diction = LinkedDict()
         for category in self.categories:
             diction.add(0, category)
         for item in self.list:
-            if item['price'] != 'Pending' and item['date'] == self.newest:
+            if item['price'] != 'Pending' and item['date'] == date:
                 for category in item['category']:
                     diction[category] = diction[category] + 1
         return diction
 
-    def price_range(self, lowest, highest):
+    def price_range(self, lowest, highest, date=None):
+        '''
+        DataADT, int, int -> LinkedDict()
+        Take lowest and highest price and return all devices that are
+        in range of these prices.  
+        If you don`t enter date it will return data about newest date.
+        Date should look like: 2020-04-20
+        '''
         assert lowest <= highest, "Lowest price should be smaller than highest!"
+        assert lowest >= self.lowestprice and highest <= self.highestprice, 'PriceError'
+        if date is None:
+            date = self.newest
+        assert date in self.dates, "Not available date."
         lst = LinkedList()
         for item in self.list:
-            if item['price'] != 'Pending' and item['date'] == self.newest:
+            if item['price'] != 'Pending' and item['date'] == date:
                 if int(item['price']) in range(lowest, highest+1):
                     lst.add(item)
         return lst
 
-d = DataADT()
-with open('data1.json', 'r', encoding='utf-8') as ff:
-    data = json.load(ff)
-
-d.insert(data)
+    def rate_range(self, lowest, highest, date=None):
+        '''
+        DataADT, int, int -> LinkedDict()
+        Take lowest and highest rate and return all devices that are
+        in range of these rates.  
+        If you don`t enter date it will return data about newest date.
+        Rate should be between 0 and 100.
+        '''
+        assert lowest <= highest, "Lowest rate should be smaller than highest!"
+        assert lowest >= 0 and highest <= 100, 'RateError'
+        if date is None:
+            date = self.newest
+        assert date in self.dates, "Not available date."
+        lst = LinkedList()
+        for item in self.list:
+            if item['date'] == date:
+                if int(item['rate']) in range(lowest, highest+1):
+                    lst.add(item)
+        return lst
+            

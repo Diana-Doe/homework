@@ -1,52 +1,42 @@
-'''
-!Require data.json. You can get it by using scr.py!
-Require pandas and json libraries.
-'''
+import dash
 import json
-import pandas as pd
+import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import dash_core_components as dcc
+import dash_html_components as html
+from modules.dataADT import DataADT
 
-
-# Get data about products from JSON file.
-with open('data.json', 'r', encoding='utf-8') as ff:
+d = DataADT()
+with open('modules/data.json', 'r', encoding='utf-8') as ff:
     data = json.load(ff)
 
-count = 0
-data = data['data']
-for i in data:
-    for j in data[i]:
-        if len(j['category']) > 1:
-            count += 1
-print(count)
+# write all data into DataADT
+d.insert(data)
 
-# Create a pandas dataframe from data ejected from JSON file.
-# DataFrame contains dates, names of products, categories,
-# prices, customers and rates.
-da = pd.concat({key: pd.DataFrame(val) for key, val in data['data'].items()}).reset_index()
-del da['level_1']
-da = da.rename(columns={"level_0": "date"}).set_index(['name'])
+# Write names of all categories into list x
+# amount of devices of each category into list y.
+categories = d.category_count()
+x, y = [], []
+for i in categories:
+    x.append(i)
+    y.append(categories[i]) 
 
-# All categories in lists but they need to be separate values.
-# So split a list inside a Dataframe.
-categories, names, dates, prices, customers, rates = [], [], [], [], [], []
-for _, row in da.iterrows():
-    date, name, price, customer, rate = row.date, row.name, row.price, row.customers, row.rate
-    for category in row.category:
-        dates.append(date)
-        names.append(name)
-        prices.append(price)
-        customers.append(customer)
-        rates.append(rate)
-        categories.append(category)
-# Create new DataFrame with separate categories.
-data = pd.DataFrame({
-    "date" : dates,
-    "category": categories,
-    "name": names,
-    "price" : prices,
-    "customers" : customers,
-    "rate" : rates
-})
+# Write number of devices of each category into list z.
+categories_avail = d.category_count_avail()
+z = []
+for i in categories_avail:
+    z.append(categories_avail[i]) 
 
-# Set date and name of item as indexes.
-data = data.set_index(['date', 'name'])
-print(data.shape)
+
+# Create two bars with available devices and all devices.
+fig = go.Figure(data=[
+    go.Bar(name='Available', x=x, y=z),
+    go.Bar(name='All', x=x, y=y, marker_color='lightslategrey')
+])
+
+# Change the bar title and name of y-axis.
+fig.update_layout(barmode='group', title='Comparison of categories',yaxis=dict(
+        title='Number of devices'
+    ))
+# Show bar
+fig.show()
