@@ -3,7 +3,9 @@ The site from which I take data -- [SmartHome](https://www.smarthomedb.com/produ
 ## Description
 The program takes data from the [web-site](https://www.smarthomedb.com/products, 'SmartHome'), stores them in ADT and builds graphs.
 <br>Site is built with dash with bootstrap components.
+<br>
 ![image](https://user-images.githubusercontent.com/54356826/82119593-8327ee00-9788-11ea-83b6-bf75ec610d3e.png)
+<br>
 ![image](https://user-images.githubusercontent.com/54356826/82119626-c1bda880-9788-11ea-9d85-93b969798125.png)
 <br>
 <br>Since the site from which I take information is not large I do not use a web spider.
