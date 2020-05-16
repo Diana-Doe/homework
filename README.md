@@ -5,6 +5,7 @@ The program takes data from the [web-site](https://www.smarthomedb.com/products,
 <br>Site is built with dash with bootstrap components.
 ![image](https://user-images.githubusercontent.com/54356826/82119593-8327ee00-9788-11ea-83b6-bf75ec610d3e.png)
 ![image](https://user-images.githubusercontent.com/54356826/82119626-c1bda880-9788-11ea-9d85-93b969798125.png)
+<br>
 <br>Since the site from which I take information is not large I do not use a web spider.
 #### Contents in Modules directory: 
 - `scraping.py` - This is code for web-scraping. It collects data from site and writes it into JSON file. If there is an available JSON file in the same directory it updates it.
@@ -26,7 +27,7 @@ pip install plotly
 pip install dash
 pip install dash-bootstrap-components 
 ```
-- Run `scraping.py` from module directory to  to build database.
+- Run `scraping.py` from module directory to build database.
 - Run `graph.py` from module directory to buid graphs and site.
 ## Usage
 
