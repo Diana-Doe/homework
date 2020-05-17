@@ -1,6 +1,5 @@
 ## Project name: SmartHome analysis
-[My site](https://deersmarthome.herokuapp.com/)
-<br>
+### [My site](https://deersmarthome.herokuapp.com/) (Try to reload if it doesn't work)
 The site from which I take data -- [SmartHome](https://www.smarthomedb.com/products).
 ## Description
 The program takes data from the [web-site](https://www.smarthomedb.com/products, 'SmartHome'), stores them in ADT and builds graphs.
