@@ -60,3 +60,4 @@ This program can be used for analysing information about smart homes, like price
 ## Credits
 Hromyak Diana, UCU
 ## License
+[MIT License](https://github.com/Diana-Doe/homework/blob/master/LICENSE.md)
