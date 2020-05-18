@@ -1,3 +1,4 @@
+'''Module for creating graphs and site'''
 import dash
 import json
 import plotly.graph_objects as go
@@ -270,7 +271,7 @@ dot_rate.update_layout(
 ####################################################################################################
 #   Site
 
-HOME_LOGO = "https://lh3.googleusercontent.com/proxy/gmMBmuJUXssK4bxzwNEb9xfLxk9zQacLGi6PvHO-TU7TQYSNXP6g9qX4wrCueaZBybip_SHdsXqYbQKBuRWpkt23JRc2nAehPg7PYkqFG2-RQWW0F-BOHVczYjWjm85LJw3mU6aJcAir"
+HOME_LOGO = "https://www.nicepng.com/png/full/420-4209725_smart-homes-wifi-sign.png"
 
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 nav_item1 = dbc.NavItem(
@@ -356,7 +357,7 @@ cardOne = dbc.Card(
                     className="card-text",
                     style={'height': '99.2px'}
                 ),
-                dbc.Button("Open App", id="open",  color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="open",  color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -383,7 +384,7 @@ cardTwo = dbc.Card(
                     "This is simple bar that represents categories.",
                     className="card-text",
                 ),
-                dbc.Button("Open App", id="opentwo", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="opentwo", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -411,7 +412,7 @@ cardThree = dbc.Card(
                     className="card-text",
                     style={'height': '74.95px'}
                 ),
-                dbc.Button("Open App", id="openthree", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="openthree", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -439,7 +440,7 @@ cardFour = dbc.Card(
                     className="card-text",
                     style={'height': '99.39px'}
                 ),
-                dbc.Button("Open App", id="openfour", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="openfour", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -467,7 +468,7 @@ cardFive = dbc.Card(
                     className="card-text",
                     style={'height': '94.75px'}
                 ),
-                dbc.Button("Open App", id="openfive", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="openfive", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -486,7 +487,7 @@ cardFive = dbc.Card(
 )
 cardSix = dbc.Card(
     [
-        dbc.CardImg(src="https://lh3.googleusercontent.com/proxy/Xc7T-K_aI8knXXZe2NYCAmU6oRfSWPWPX96Zz6GjiNNsKAA7IPvfSln1ZeczGd8nAw2t16o6-fMuo2djTs0hhnTKR3Lha8y_F4ahm3FQQ_R7JL57EmBAHknvcLYEzE4F", top=True),
+        dbc.CardImg(src="https://cdn.makeuseof.com/wp-content/uploads/2017/10/Smart-Home-Break-Even-Featured-670x335.jpg?x97327", top=True),
         dbc.CardBody(
             [
                 html.H4("Price-Customers", className="card-title"),
@@ -495,7 +496,7 @@ cardSix = dbc.Card(
                     className="card-text",
                     style={'height': '117.25px'}
                 ),
-                dbc.Button("Open App", id="opensix", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="opensix", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
@@ -523,7 +524,7 @@ cardSeven = dbc.Card(
                     className="card-text",
                     style={'height': '69.59px'}
                 ),
-                dbc.Button("Open App", id="openseven", color='primary', style={'margin': 'auto', 'width': '100%'}),
+                dbc.Button("Open graph", id="openseven", color='primary', style={'margin': 'auto', 'width': '100%'}),
                 dbc.Modal(
                     [
                         dbc.ModalHeader("SmartHome"),
