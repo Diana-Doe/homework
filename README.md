@@ -45,6 +45,7 @@ Program builds 7 graphs:
 > ### [Homework №2](https://github.com/Diana-Doe/homework/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%94-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F-2)
 > ### [Homework №3](https://github.com/Diana-Doe/homework/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%94-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F-3)
 > ### [Homework №4](https://github.com/Diana-Doe/homework/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%94-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F-4)
+> ### [Homework №5](https://github.com/Diana-Doe/homework/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%94-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F-5)
 ## Installation
 - Clone repo.
 - Install all required libraries.
