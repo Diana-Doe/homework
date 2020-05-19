@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>modules package &#8212; SmartHome 1.0.3 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to SmartHome’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="modules-package">
+<h1>modules package<a class="headerlink" href="#modules-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-modules.LinkedList">
+<span id="modules-linkedlist-module"></span><h2>modules.LinkedList module<a class="headerlink" href="#module-modules.LinkedList" title="Permalink to this headline">¶</a></h2>
+<p>Module with linked list and linked dictionary</p>
+<dl class="py class">
+<dt id="modules.LinkedList.LinkedDict">
+<em class="property">class </em><code class="sig-prename descclassname">modules.LinkedList.</code><code class="sig-name descname">LinkedDict</code><a class="headerlink" href="#modules.LinkedList.LinkedDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represent dictionary</p>
+<dl class="py method">
+<dt id="modules.LinkedList.LinkedDict.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.LinkedDict.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>LinkedDict -&gt; NoneType
+Take two values add them to LinkedDict.
+First as data(value) and second as id(key).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.LinkedList.LinkedDict.items">
+<code class="sig-name descname">items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.LinkedDict.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>LinkedDict -&gt; str/int
+Return values of dictionary.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.LinkedList.LinkedDictIterator">
+<em class="property">class </em><code class="sig-prename descclassname">modules.LinkedList.</code><code class="sig-name descname">LinkedDictIterator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">head</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.LinkedDictIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.LinkedList.LinkedList">
+<em class="property">class </em><code class="sig-prename descclassname">modules.LinkedList.</code><code class="sig-name descname">LinkedList</code><a class="headerlink" href="#modules.LinkedList.LinkedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents linked list</p>
+<dl class="py method">
+<dt id="modules.LinkedList.LinkedList.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.LinkedList.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>LinkedList, str/int -&gt; NoneType
+Take string or number and add it to LinkedList.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.LinkedList.LinkedListIterator">
+<em class="property">class </em><code class="sig-prename descclassname">modules.LinkedList.</code><code class="sig-name descname">LinkedListIterator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">head</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.LinkedListIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents linked list Iterator</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.LinkedList.Node">
+<em class="property">class </em><code class="sig-prename descclassname">modules.LinkedList.</code><code class="sig-name descname">Node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">next</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.LinkedList.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents Node</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.dataADT">
+<span id="modules-dataadt-module"></span><h2>modules.dataADT module<a class="headerlink" href="#module-modules.dataADT" title="Permalink to this headline">¶</a></h2>
+<p>Module with ADT class.</p>
+<dl class="py class">
+<dt id="modules.dataADT.DataADT">
+<em class="property">class </em><code class="sig-prename descclassname">modules.dataADT.</code><code class="sig-name descname">DataADT</code><a class="headerlink" href="#modules.dataADT.DataADT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents data</p>
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.category_count">
+<code class="sig-name descname">category_count</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.category_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT, str -&gt; LinkedDict()
+Counts the number of devices in each category.
+Return linked dict with catogory as key and number of devices
+as value.
+If you don`t enter date it will return data about newest date.
+Date should look like: 2020-04-20</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.category_count_avail">
+<code class="sig-name descname">category_count_avail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.category_count_avail" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT, str -&gt; LinkedDict()
+Counts the number of available devices in each category.
+Return linked dict with catogory as key and number of available devices
+as value.
+If you don`t enter date it will return data about newest date.
+Date should look like: 2020-04-20</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.date_count">
+<code class="sig-name descname">date_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.date_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT -&gt; LinkedDict()
+Counts the number of devices in each available date.
+Return linked dict whith date as key and number of devices
+as value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.date_count_avail">
+<code class="sig-name descname">date_count_avail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.date_count_avail" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT -&gt; LinkedDict()
+Counts the number of available devices in each available date.
+Return linked dict whith date as key and number of available devices
+as value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.date_customers">
+<code class="sig-name descname">date_customers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.date_customers" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT -&gt; LinkedDict()
+Counts the number of available customers in each available date.
+Return linked dict whith date as key and number of customers
+as value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT, dict -&gt; NoneType
+Take only specific data which you can get by using module for scraping.
+How parameter data should look :: {data} -&gt; {date} -&gt; [{device},..,{device}]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.price_range">
+<code class="sig-name descname">price_range</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lowest</span></em>, <em class="sig-param"><span class="n">highest</span></em>, <em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.price_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT, int, int -&gt; LinkedDict()
+Take lowest and highest price and return all devices that are
+in range of these prices.  
+If you don`t enter date it will return data about newest date.
+Date should look like: 2020-04-20</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dataADT.DataADT.rate_range">
+<code class="sig-name descname">rate_range</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lowest</span></em>, <em class="sig-param"><span class="n">highest</span></em>, <em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dataADT.DataADT.rate_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataADT, int, int -&gt; LinkedDict()
+Take lowest and highest rate and return all devices that are
+in range of these rates.  
+If you don`t enter date it will return data about newest date.
+Rate should be between 0 and 100.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.graph">
+<span id="modules-graph-module"></span><h2>modules.graph module<a class="headerlink" href="#module-modules.graph" title="Permalink to this headline">¶</a></h2>
+<p>Module for creating graphs and site</p>
+<dl class="py data">
+<dt id="modules.graph.row">
+<code class="sig-prename descclassname">modules.graph.</code><code class="sig-name descname">row</code><em class="property"> = Div([Row(P('')), Row(children=[Col(Div(Card(children=[CardImg(top=True, src='https://i.pcmag.com/imagery/articles/0100gZDnjpDgR5KqbpXcvMX-7.fit_scale.size_2698x1517.v1569490902.jpg'), CardBody([H4(children='Date-Devices', className='card-title'), P(children='This is simple linear trendline.                     It shows change the number of available devices and all devices.', className='card-text', style={'height': '99.2px'}), Button(children='Open graph', id='open', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Date-Devices graph'), Graph(id='slide1', figure=Figure({     'data': [{'name': 'All', 'type': 'scatter', 'x': ['2020-04-20'], 'y': [1]},              {'line': {'color': 'firebrick'}, 'name': 'Available', 'type': 'scatter', 'x': ['2020-04-20'], 'y': [1]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Number of devices'}}} }))])), ModalFooter(Button(children='Close', id='close', className='ml-auto'))], id='modal', size='xl')])], style={'width': '18rem', 'height': '396px'}))), Col(Div(Card(children=[CardImg(top=True, src='https://cumgeek.com/wp-content/uploads/2017/08/Smart-Home-graphic-scaled.jpg'), CardBody([H4(children='Caregories', className='card-title'), P(children='This is simple bar that represents categories.', className='card-text'), Button(children='Open graph', id='opentwo', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Category-Devices bar'), Graph(id='slide2', figure=Figure({     'data': [{'name': 'Available', 'type': 'bar', 'x': ['Voice Command Device'], 'y': [1]},              {'marker': {'color': 'lightslategrey'},               'name': 'All',               'type': 'bar',               'x': [Voice Command Device],               'y': [1]}],     'layout': {'barmode': 'group',                'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Number of devices'}}} }))])), ModalFooter(Button(children='Close', id='closetwo', className='ml-auto'))], id='modaltwo', size='xl')])], style={'width': '18rem', 'height': '396px'}))), Col(Div(Card(children=[CardImg(top=True, src='https://ichip.ru/blobimgs/uploads/2019/03/smart-home-3395994_960_720.jpg'), CardBody([H4(children='Date-Customers', className='card-title'), P(children='This is simple linear trendline. It shows growth of customers.', className='card-text', style={'height': '74.95px'}), Button(children='Open graph', id='openthree', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Date-Customers graph'), Graph(id='slide3', figure=Figure({     'data': [{'type': 'scatter', 'x': ['2020-04-20'], 'y': [152]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Number of customers'}}} }))])), ModalFooter(Button(children='Close', id='closethree', className='ml-auto'))], id='modalthree', size='xl')])], style={'width': '18rem', 'height': '396px'})))], style={'margin': 'auto', 'width': '78vw'}), Row(P('')), Row(children=[Col(Div(Card(children=[CardImg(top=True, src='https://www.eletimes.com/wp-content/uploads/2017/02/The-internet-of-things.jpg'), CardBody([H4(children='Rate-Price', className='card-title'), P(children='This is simple dot graph. It shows dependence of the price on a rating.', className='card-text', style={'height': '99.39px'}), Button(children='Open graph', id='openfour', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Price-rate graph'), Graph(id='slide4', figure=Figure({     'data': [{'marker': {'color': [4.0]},               'mode': 'markers',               'text': [Echo Dot (2nd Gen) - Alexa-Enabled],               'type': 'scatter',               'x': [20],               'y': [4.0]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'range': [0, 12000],                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Price($)'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Rate(stars)'}}} }))])), ModalFooter(Button(children='Close', id='closefour', className='ml-auto'))], id='modalfour', size='xl')])], style={'width': '18rem', 'height': '396px'}))), Col(Div(Card(children=[CardImg(top=True, src='https://www.techfunnel.com/wp-content/uploads/2019/10/7-Free-Marketing-Automation-Tools-for-SMBs.jpg'), CardBody([H4(children='Category-Price-Rate', className='card-title'), P(children='This is simple bubble graph. It shows dependence of categories on rate and price.', className='card-text', style={'height': '94.75px'}), Button(children='Open graph', id='openfive', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Categories bubble'), Graph(id='slide5', figure=Figure({     'data': [{'marker': {'color': [1], 'size': [1]},               'mode': 'markers',               'text': [Category:Voice Command Device&lt;br&gt;Devices:1],               'type': 'scatter',               'x': [20.0],               'y': [4.0]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Price($)'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Rate(stars)'}}} }))])), ModalFooter(Button(children='Close', id='closefive', className='ml-auto'))], id='modalfive', size='xl')])], style={'width': '18rem', 'height': '396px'}))), Col(Div(Card(children=[CardImg(top=True, src='https://cdn.makeuseof.com/wp-content/uploads/2017/10/Smart-Home-Break-Even-Featured-670x335.jpg?x97327'), CardBody([H4(children='Price-Customers', className='card-title'), P(children='This is simple dot graph. It shows dependence of customers on price.', className='card-text', style={'height': '117.25px'}), Button(children='Open graph', id='opensix', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Price-customers graph'), Graph(id='slide6', figure=Figure({     'data': [{'marker': {'color': [20]},               'mode': 'markers',               'text': [Echo Dot (2nd Gen) - Alexa-Enabled],               'type': 'scatter',               'x': [20],               'y': [152]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'range': [0, 6000],                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Price($)'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'range': [0, 350],                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Customers'}}} }))])), ModalFooter(Button(children='Close', id='closesix', className='ml-auto'))], id='modalsix', size='xl')])], style={'width': '18rem', 'height': '396px'})))], style={'margin': 'auto', 'width': '78vw'}), Row(P('')), Row(children=[Col(Div(Card(children=[CardImg(top=True, src='https://images.idgesg.net/images/article/2018/06/ring-alarm-lifestyle-100761146-large.jpg'), CardBody([H4(children='Rate-Customers', className='card-title'), P(children='This is simple dot graph. It shows dependence of customers on rate.', className='card-text', style={'height': '69.59px'}), Button(children='Open graph', id='openseven', style={'margin': 'auto', 'width': '100%'}, color='primary'), Modal(children=[ModalHeader('SmartHome'), ModalBody(Div([H1('Rate-customers graph'), Graph(id='slide7', figure=Figure({     'data': [{'marker': {'color': [20]},               'mode': 'markers',               'text': [Echo Dot (2nd Gen) - Alexa-Enabled],               'type': 'scatter',               'x': [152],               'y': [4.0]}],     'layout': {'paper_bgcolor': 'white',                'plot_bgcolor': 'white',                'template': '...',                'xaxis': {'linecolor': 'rgb(100, 100, 100)',                          'range': [0, 350],                          'showgrid': False,                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Customers'}},                'yaxis': {'linecolor': 'rgb(100, 100, 100)',                          'showline': True,                          'tickfont': {'color': 'rgb(100, 100, 100)'},                          'title': {'text': 'Rate(stars)'}}} }))])), ModalFooter(Button(children='Close', id='closeseven', className='ml-auto'))], id='modalseven', size='xl')])], style={'width': '18rem', 'height': '396px'})))], style={'margin': 'auto', 'width': '26vw'})])</em><a class="headerlink" href="#modules.graph.row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layout</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.graph.toggle_modal">
+<code class="sig-prename descclassname">modules.graph.</code><code class="sig-name descname">toggle_modal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n1</span></em>, <em class="sig-param"><span class="n">n2</span></em>, <em class="sig-param"><span class="n">is_open</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.graph.toggle_modal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="modules.graph.toggle_navbar_collapse">
+<code class="sig-prename descclassname">modules.graph.</code><code class="sig-name descname">toggle_navbar_collapse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">is_open</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.graph.toggle_navbar_collapse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-modules.scraping">
+<span id="modules-scraping-module"></span><h2>modules.scraping module<a class="headerlink" href="#module-modules.scraping" title="Permalink to this headline">¶</a></h2>
+<p>Example of scraping information from a website by using requests
+and BeautifulSoup libraries.
+Copyright (c) 2020 Diana Hromyak</p>
+<dl class="py function">
+<dt id="modules.scraping.page_parse">
+<code class="sig-prename descclassname">modules.scraping.</code><code class="sig-name descname">page_parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">URL</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.scraping.page_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>str -&gt; None
+Get data from the page by using library requests and parse it using BeautifulSoup.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.scraping.parse">
+<code class="sig-prename descclassname">modules.scraping.</code><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">soup</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.scraping.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>bs4.BeautifulSoup -&gt; None
+Parse page by using BeautifulSoup library. 
+Take items` names, number of customers, prices, categories, rates.
+Append them to main content.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-modules" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SmartHome</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">modules package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-modules.LinkedList">modules.LinkedList module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-modules.dataADT">modules.dataADT module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-modules.graph">modules.graph module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-modules.scraping">modules.scraping module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-modules">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to SmartHome’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Diana Hromyak.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
