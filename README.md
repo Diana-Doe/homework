@@ -49,6 +49,7 @@ Program builds 7 graphs:
 - Clone repo.
 - Install all required libraries.
 ```python
+pip install requests
 pip install beautifulsoup4
 pip install plotly
 pip install dash
